@@ -453,14 +453,14 @@ A: Snippets 更强大灵活。Slot 适合简单内容传递；Snippet 可接收�
 
 本技能是 Svelte Legacy 维护专用，与以下技能协同：
 
-- Svelte 5 入口与学习路径 → `../svelte-awesome/`
-- Svelte 4 → Svelte 5 迁移对照 → `../svelte-misc/`（migration 章节）
-- Runes 响应式（`$state` / `$derived` / `$effect`）→ `../svelte-runes/`
-- Stores（writable / readable / derived）→ `../svelte-lifecycle/`
-- 模板语法（snippet / event / bind）→ `../svelte-template-syntax/`
-- 调试响应式不更新 / `$inspect` → `../svelte-lifecycle/`
-- 把组件编译为 Web Component → `../svelte-misc/`（Custom Elements 章节）
-- 初始化与迁移脚本 → `../svelte-cli/`（`sv migrate svelte-5`）
+- Svelte 5 入口与学习路径 → hand off to **`svelte-awesome`** skill. Install: `npx skills add full-stack-skills/svelte-skills --skill svelte-awesome`.
+- Svelte 4 → Svelte 5 迁移对照 → hand off to **`svelte-misc`** skill（migration 章节）. Install: `npx skills add full-stack-skills/svelte-skills --skill svelte-misc`.
+- Runes 响应式（`$state` / `$derived` / `$effect`）→ hand off to **`svelte-runes`** skill. Install: `npx skills add full-stack-skills/svelte-skills --skill svelte-runes`.
+- Stores（writable / readable / derived）→ hand off to **`svelte-lifecycle`** skill. Install: `npx skills add full-stack-skills/svelte-skills --skill svelte-lifecycle`.
+- 模板语法（snippet / event / bind）→ hand off to **`svelte-template-syntax`** skill. Install: `npx skills add full-stack-skills/svelte-skills --skill svelte-template-syntax`.
+- 调试响应式不更新 / `$inspect` → hand off to **`svelte-lifecycle`** skill. Install: `npx skills add full-stack-skills/svelte-skills --skill svelte-lifecycle`.
+- 把组件编译为 Web Component → hand off to **`svelte-misc`** skill（Custom Elements 章节）. Install: `npx skills add full-stack-skills/svelte-skills --skill svelte-misc`.
+- 初始化与迁移脚本 → hand off to **`svelte-cli`** skill（`sv migrate svelte-5`）. Install: `npx skills add full-stack-skills/svelte-skills --skill svelte-cli`.
 
 ## Examples
 

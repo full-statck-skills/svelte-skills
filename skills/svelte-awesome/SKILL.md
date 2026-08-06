@@ -242,13 +242,15 @@ A: 适合所有 Web UI 场景：从简单组件到复杂应用。配合 SvelteKi
 
 ### 子技能示例
 
-- 路由 / 数据加载 / `+page.svelte` / `+layout.svelte` → `../sveltekit-overview/examples/`
-- `load` 函数 / form actions / `use:enhance` → `../sveltekit-data/examples/`
-- adapter / env / `$lib` / hooks / service worker → `../sveltekit-advanced/examples/`
-- `svelte.config.js` / 构建 / 部署 / enhanced-img → `../sveltekit-config/examples/`
-- `sv create` / `sv add` / `sv migrate` / `sv check` → `../svelte-cli/examples/`
-- Svelte MCP server / Cursor rules → `../svelte-ai/examples/`
-- 生命周期 / Stores / Context / Vitest / Storybook → `../svelte-lifecycle/examples/`
+(以下每个 skill 通过 `npx skills add full-stack-skills/svelte-skills --skill <name>` 安装)
+
+- 路由 / 数据加载 / `+page.svelte` / `+layout.svelte` → hand off to **`sveltekit-overview`** skill
+- `load` 函数 / form actions / `use:enhance` → hand off to **`sveltekit-data`** skill
+- adapter / env / `$lib` / hooks / service worker → hand off to **`sveltekit-advanced`** skill
+- `svelte.config.js` / 构建 / 部署 / enhanced-img → hand off to **`sveltekit-config`** skill
+- `sv create` / `sv add` / `sv migrate` / `sv check` → hand off to **`svelte-cli`** skill
+- Svelte MCP server / Cursor rules → hand off to **`svelte-ai`** skill
+- 生命周期 / Stores / Context / Vitest / Storybook → hand off to **`svelte-lifecycle`** skill
 
 ## References
 
@@ -263,10 +265,12 @@ A: 适合所有 Web UI 场景：从简单组件到复杂应用。配合 SvelteKi
 
 ### 子技能参考
 
-- SvelteKit 项目结构 / 路由约定 / Web 标准 → `../sveltekit-overview/references/`
-- 数据加载 / form actions / 页面选项 / `use:enhance` → `../sveltekit-data/references/`
-- SSR 安全 stores / Remote functions / Hooks / `$app/*` → `../sveltekit-advanced/references/`
-- Adapters / 构建 / 性能 / Images / Migration → `../sveltekit-config/references/`
-- `sv` 命令完整参数 / 自定义 add-on → `../svelte-cli/references/`
-- MCP tools / AI 集成清单 → `../svelte-ai/references/`
-- Lifecycle / Stores / Context / Testing 深入 → `../svelte-lifecycle/references/`
+(以下每个 skill 通过 `npx skills add full-stack-skills/svelte-skills --skill <name>` 安装)
+
+- SvelteKit 项目结构 / 路由约定 / Web 标准 → hand off to **`sveltekit-overview`** skill
+- 数据加载 / form actions / 页面选项 / `use:enhance` → hand off to **`sveltekit-data`** skill
+- SSR 安全 stores / Remote functions / Hooks / `$app/*` → hand off to **`sveltekit-advanced`** skill
+- Adapters / 构建 / 性能 / Images / Migration → hand off to **`sveltekit-config`** skill
+- `sv` 命令完整参数 / 自定义 add-on → hand off to **`svelte-cli`** skill
+- MCP tools / AI 集成清单 → hand off to **`svelte-ai`** skill
+- Lifecycle / Stores / Context / Testing 深入 → hand off to **`svelte-lifecycle`** skill
