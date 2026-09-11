@@ -7,6 +7,38 @@ description: Svelte 5 Runes 响应式系统技能。当用户需要使用 $state
 
 本技能覆盖 Svelte 5 的 Runes（符文）系统。Runes 是 Svelte 5 引入的显式响应式语法，取代了 Svelte 4 的隐式 `let` 声明和 `$:` 语句。
 
+## Capability Boundaries
+
+### ✅ 强项
+1. Svelte 5 显式响应式系统（Runes）的完整参考：$state / $derived / $effect / $props / $bindable / $inspect / $host
+2. 详细的子段（Proxy 行为、依赖追踪、cleanup、pre/tracking/pending/root 等）
+3. 跨模块共享状态模式 + `.svelte.js` 文件约定
+4. Svelte 4 → Svelte 5 迁移提示（隐式 vs 显式响应式）
+5. 完整的 Quick Fixes / Gotchas / FAQ 速查
+
+### ⚠️ 限制
+1. 本技能专注于 Svelte 5 Runes 体系，不覆盖 Svelte 4 隐式响应式（`let` + `$:`）
+2. 不包含动画 / 过渡 / 模板语法的深入内容（改用 `svelte-template-syntax`）
+3. 不包含组件生命周期 / stores / context 的高级用法（仅在 Svelte Runes 相关处提及）
+
+### ❌ Out of Scope（不该用本技能的场景）
+1. **Svelte 4 隐式响应式** → 不适用，改用 Svelte 4 文档
+2. **模板块语法（{#if}/{#each}/{#await}/{#snippet}）** → 改用 `svelte-template-syntax`
+3. **transition/animate** → 改用 `svelte-template-syntax`
+4. **Stores（writable/derived）** → 改用 Svelte 5 文档对应章节（与 Runes 互补）
+
+## Data Privacy
+
+本技能不收集、存储或传输任何用户数据。所有代码示例仅用于本地开发参考。
+
+## Workflow
+
+Step 1. **识别用户需要的 Rune** — `$state` / `$derived` / `$effect` / `$props` / `$bindable` / `$inspect` / `$host`
+Step 2. **查对应章节** — SKILL.md 给概览，深度细节见 `references/$X-deep.md`
+Step 3. **必要时看示例** — `examples/$X-patterns.md` 提供可复制代码
+Step 4. **查 Quick Fixes / Gotchas / FAQ** — 三个速查表覆盖常见错误
+Step 5. **Svelte 4 迁移场景** — 关注"Runes Overview"对比段
+
 ## When to use this skill
 
 当用户需要理解或使用 `$state`、`$derived`、`$effect`、`$props`、`$bindable`、`$inspect`、`$host` 等符文，或需要将 Svelte 4 代码迁移到 Svelte 5 时使用本技能。
@@ -782,3 +814,17 @@ A: 真正全局单例用 `.svelte.js`；请求级隔离/组件树共享优先 Co
 | `$inspect-deep.md` | `$inspect`、`$inspect.with`、`$inspect.trace` 完整参考 |
 | `$host-deep.md` | 自定义元素 `$host` 用法、`<svelte:options>` 配置、典型模式 |
 | `context-deep.md` | createContext vs setContext、类型安全、SSR |
+
+## Reference Library
+
+深度技术参考（按需加载）：
+
+- [references/runes-overview.md](references/runes-overview.md) — Runes 整体架构、vs Legacy 对比、生命周期
+- [references/$state-deep.md](references/$state-deep.md) — Proxy 行为、`$state.raw`/`snapshot`/`eager`、类中 `$state`、内置响应式类、跨模块
+- [references/$derived-deep.md](references/$derived-deep.md) — 表达式 vs `$derived.by`、依赖追踪、可写派生、Push-pull、解构
+- [references/$effect-deep.md](references/$effect-deep.md) — pre/tracking/cleanup/pending/root、追踪规则、常见错误
+- [references/$props-deep.md](references/$props-deep.md) — 解构、Rest Props、Type safety、`$props.id()`、泛型
+- [references/$bindable-deep.md](references/$bindable-deep.md) — 完整 `$bindable` 参考：双向绑定、fallback、函数绑定组合
+- [references/$inspect-deep.md](references/$inspect-deep.md) — `$inspect`、`$inspect.with`、`$inspect.trace` 完整参考
+- [references/$host-deep.md](references/$host-deep.md) — 自定义元素 `$host` 用法、`<svelte:options>` 配置、典型模式
+- [references/context-deep.md](references/context-deep.md) — createContext vs setContext、类型安全、SSR
